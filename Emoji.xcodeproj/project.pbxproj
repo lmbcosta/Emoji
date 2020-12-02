@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80192A752578410100E76A45 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80192A742578410100E76A45 /* CommonButton.swift */; };
 		80A9BF9D25782E5E004B7854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E5A8BE25782ACE00223A32 /* AppDelegate.swift */; };
+		80A9BFA925783090004B7854 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9BFA825783090004B7854 /* MainViewController.swift */; };
+		80A9BFAC257830A6004B7854 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9BFAB257830A6004B7854 /* MainViewModel.swift */; };
+		80A9BFAF257830BE004B7854 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9BFAE257830BE004B7854 /* MainView.swift */; };
+		80A9BFB22578311F004B7854 /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9BFB12578311F004B7854 /* MainBuilder.swift */; };
+		80A9BFB625783177004B7854 /* BuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9BFB525783177004B7854 /* BuilderProtocol.swift */; };
+		80A9BFBA257832BD004B7854 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 80A9BFB9257832BD004B7854 /* SnapKit */; };
+		80A9BFC02578341D004B7854 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9BFBF2578341D004B7854 /* EmojiView.swift */; };
+		80A9BFC3257837D9004B7854 /* EmojiButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9BFC2257837D9004B7854 /* EmojiButtonView.swift */; };
+		80A9BFC72578394D004B7854 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9BFC62578394D004B7854 /* UIColor+Palette.swift */; };
 		80E8E95425782995003D2FDF /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 80E8E95325782995003D2FDF /* RxSwift */; };
 		80E8E958257829EF003D2FDF /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 80E8E957257829EF003D2FDF /* Moya */; };
 		80E8E95A257829EF003D2FDF /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 80E8E959257829EF003D2FDF /* ReactiveMoya */; };
@@ -15,7 +25,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80192A742578410100E76A45 /* CommonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
 		8052D9512578223000BA387F /* Emoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A9BFA825783090004B7854 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		80A9BFAB257830A6004B7854 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		80A9BFAE257830BE004B7854 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		80A9BFB12578311F004B7854 /* MainBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
+		80A9BFB525783177004B7854 /* BuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderProtocol.swift; sourceTree = "<group>"; };
+		80A9BFBF2578341D004B7854 /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
+		80A9BFC2257837D9004B7854 /* EmojiButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiButtonView.swift; sourceTree = "<group>"; };
+		80A9BFC62578394D004B7854 /* UIColor+Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
 		80E5A8BB25782ACE00223A32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80E5A8BE25782ACE00223A32 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80E5A8BF25782ACE00223A32 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -30,12 +49,23 @@
 				80E8E95425782995003D2FDF /* RxSwift in Frameworks */,
 				80E8E95C257829EF003D2FDF /* RxMoya in Frameworks */,
 				80E8E95A257829EF003D2FDF /* ReactiveMoya in Frameworks */,
+				80A9BFBA257832BD004B7854 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80192A72257840AF00E76A45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80A9BFAE257830BE004B7854 /* MainView.swift */,
+				80A9BFC2257837D9004B7854 /* EmojiButtonView.swift */,
+				80A9BFBF2578341D004B7854 /* EmojiView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		8052D9482578223000BA387F = {
 			isa = PBXGroup;
 			children = (
@@ -55,14 +85,61 @@
 		80A9BFA725782FCC004B7854 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				80192A72257840AF00E76A45 /* Views */,
+				80A9BFA825783090004B7854 /* MainViewController.swift */,
+				80A9BFAB257830A6004B7854 /* MainViewModel.swift */,
+				80A9BFB12578311F004B7854 /* MainBuilder.swift */,
 			);
 			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		80A9BFB425783159004B7854 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				80A9BFC525783939004B7854 /* Extensions */,
+				80A9BFBE257833F7004B7854 /* Views */,
+				80A9BFBD257833E9004B7854 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		80A9BFBC257833D7004B7854 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				80A9BFA725782FCC004B7854 /* MainScreen */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		80A9BFBD257833E9004B7854 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				80A9BFB525783177004B7854 /* BuilderProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		80A9BFBE257833F7004B7854 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80192A742578410100E76A45 /* CommonButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		80A9BFC525783939004B7854 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80A9BFC62578394D004B7854 /* UIColor+Palette.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		80E5A8BA25782ACE00223A32 /* Emoji */ = {
 			isa = PBXGroup;
 			children = (
-				80A9BFA725782FCC004B7854 /* MainScreen */,
+				80A9BFBC257833D7004B7854 /* Features */,
+				80A9BFB425783159004B7854 /* Common */,
 				80E5A8BB25782ACE00223A32 /* Assets.xcassets */,
 				80E5A8BE25782ACE00223A32 /* AppDelegate.swift */,
 				80E5A8BF25782ACE00223A32 /* Info.plist */,
@@ -91,6 +168,7 @@
 				80E8E957257829EF003D2FDF /* Moya */,
 				80E8E959257829EF003D2FDF /* ReactiveMoya */,
 				80E8E95B257829EF003D2FDF /* RxMoya */,
+				80A9BFB9257832BD004B7854 /* SnapKit */,
 			);
 			productName = Emojy;
 			productReference = 8052D9512578223000BA387F /* Emoji.app */;
@@ -122,6 +200,7 @@
 			packageReferences = (
 				80E8E95225782995003D2FDF /* XCRemoteSwiftPackageReference "RxSwift" */,
 				80E8E956257829EF003D2FDF /* XCRemoteSwiftPackageReference "Moya" */,
+				80A9BFB8257832BD004B7854 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 8052D9522578223000BA387F /* Products */;
 			projectDirPath = "";
@@ -148,6 +227,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				80A9BF9D25782E5E004B7854 /* AppDelegate.swift in Sources */,
+				80A9BFC72578394D004B7854 /* UIColor+Palette.swift in Sources */,
+				80A9BFAF257830BE004B7854 /* MainView.swift in Sources */,
+				80A9BFA925783090004B7854 /* MainViewController.swift in Sources */,
+				80A9BFC3257837D9004B7854 /* EmojiButtonView.swift in Sources */,
+				80A9BFC02578341D004B7854 /* EmojiView.swift in Sources */,
+				80192A752578410100E76A45 /* CommonButton.swift in Sources */,
+				80A9BFB625783177004B7854 /* BuilderProtocol.swift in Sources */,
+				80A9BFAC257830A6004B7854 /* MainViewModel.swift in Sources */,
+				80A9BFB22578311F004B7854 /* MainBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +420,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		80A9BFB8257832BD004B7854 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 		80E8E95225782995003D2FDF /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
@@ -351,6 +447,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		80A9BFB9257832BD004B7854 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80A9BFB8257832BD004B7854 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		80E8E95325782995003D2FDF /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 80E8E95225782995003D2FDF /* XCRemoteSwiftPackageReference "RxSwift" */;
