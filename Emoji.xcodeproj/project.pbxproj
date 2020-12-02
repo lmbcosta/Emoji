@@ -3,21 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8052D9552578223000BA387F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8052D9542578223000BA387F /* AppDelegate.swift */; };
-		8052D95E2578223100BA387F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8052D95D2578223100BA387F /* Assets.xcassets */; };
-		8052D9612578223100BA387F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8052D95F2578223100BA387F /* LaunchScreen.storyboard */; };
+		80A9BF9D25782E5E004B7854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E5A8BE25782ACE00223A32 /* AppDelegate.swift */; };
+		80E8E95425782995003D2FDF /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 80E8E95325782995003D2FDF /* RxSwift */; };
+		80E8E958257829EF003D2FDF /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 80E8E957257829EF003D2FDF /* Moya */; };
+		80E8E95A257829EF003D2FDF /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 80E8E959257829EF003D2FDF /* ReactiveMoya */; };
+		80E8E95C257829EF003D2FDF /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 80E8E95B257829EF003D2FDF /* RxMoya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8052D9512578223000BA387F /* Emojy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emojy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8052D9542578223000BA387F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8052D95D2578223100BA387F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8052D9602578223100BA387F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8052D9622578223100BA387F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8052D9512578223000BA387F /* Emoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80E5A8BB25782ACE00223A32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80E5A8BE25782ACE00223A32 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80E5A8BF25782ACE00223A32 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +26,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E8E958257829EF003D2FDF /* Moya in Frameworks */,
+				80E8E95425782995003D2FDF /* RxSwift in Frameworks */,
+				80E8E95C257829EF003D2FDF /* RxMoya in Frameworks */,
+				80E8E95A257829EF003D2FDF /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,7 +39,7 @@
 		8052D9482578223000BA387F = {
 			isa = PBXGroup;
 			children = (
-				8052D9532578223000BA387F /* Emojy */,
+				80E5A8BA25782ACE00223A32 /* Emoji */,
 				8052D9522578223000BA387F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -42,28 +47,35 @@
 		8052D9522578223000BA387F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8052D9512578223000BA387F /* Emojy.app */,
+				8052D9512578223000BA387F /* Emoji.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8052D9532578223000BA387F /* Emojy */ = {
+		80A9BFA725782FCC004B7854 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				8052D9542578223000BA387F /* AppDelegate.swift */,
-				8052D95D2578223100BA387F /* Assets.xcassets */,
-				8052D95F2578223100BA387F /* LaunchScreen.storyboard */,
-				8052D9622578223100BA387F /* Info.plist */,
 			);
-			path = Emojy;
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		80E5A8BA25782ACE00223A32 /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				80A9BFA725782FCC004B7854 /* MainScreen */,
+				80E5A8BB25782ACE00223A32 /* Assets.xcassets */,
+				80E5A8BE25782ACE00223A32 /* AppDelegate.swift */,
+				80E5A8BF25782ACE00223A32 /* Info.plist */,
+			);
+			path = Emoji;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8052D9502578223000BA387F /* Emojy */ = {
+		8052D9502578223000BA387F /* Emoji */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8052D9652578223100BA387F /* Build configuration list for PBXNativeTarget "Emojy" */;
+			buildConfigurationList = 8052D9652578223100BA387F /* Build configuration list for PBXNativeTarget "Emoji" */;
 			buildPhases = (
 				8052D94D2578223000BA387F /* Sources */,
 				8052D94E2578223000BA387F /* Frameworks */,
@@ -73,9 +85,15 @@
 			);
 			dependencies = (
 			);
-			name = Emojy;
+			name = Emoji;
+			packageProductDependencies = (
+				80E8E95325782995003D2FDF /* RxSwift */,
+				80E8E957257829EF003D2FDF /* Moya */,
+				80E8E959257829EF003D2FDF /* ReactiveMoya */,
+				80E8E95B257829EF003D2FDF /* RxMoya */,
+			);
 			productName = Emojy;
-			productReference = 8052D9512578223000BA387F /* Emojy.app */;
+			productReference = 8052D9512578223000BA387F /* Emoji.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -92,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8052D94C2578223000BA387F /* Build configuration list for PBXProject "Emojy" */;
+			buildConfigurationList = 8052D94C2578223000BA387F /* Build configuration list for PBXProject "Emoji" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -101,11 +119,15 @@
 				Base,
 			);
 			mainGroup = 8052D9482578223000BA387F;
+			packageReferences = (
+				80E8E95225782995003D2FDF /* XCRemoteSwiftPackageReference "RxSwift" */,
+				80E8E956257829EF003D2FDF /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 8052D9522578223000BA387F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8052D9502578223000BA387F /* Emojy */,
+				8052D9502578223000BA387F /* Emoji */,
 			);
 		};
 /* End PBXProject section */
@@ -115,8 +137,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8052D9612578223100BA387F /* LaunchScreen.storyboard in Resources */,
-				8052D95E2578223100BA387F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,22 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8052D9552578223000BA387F /* AppDelegate.swift in Sources */,
+				80A9BF9D25782E5E004B7854 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		8052D95F2578223100BA387F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8052D9602578223100BA387F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8052D9632578223100BA387F /* Debug */ = {
@@ -268,7 +277,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 634C6P2UP3;
-				INFOPLIST_FILE = Emojy/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Emoji/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,7 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 634C6P2UP3;
-				INFOPLIST_FILE = Emojy/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Emoji/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +311,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8052D94C2578223000BA387F /* Build configuration list for PBXProject "Emojy" */ = {
+		8052D94C2578223000BA387F /* Build configuration list for PBXProject "Emoji" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8052D9632578223100BA387F /* Debug */,
@@ -311,7 +320,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8052D9652578223100BA387F /* Build configuration list for PBXNativeTarget "Emojy" */ = {
+		8052D9652578223100BA387F /* Build configuration list for PBXNativeTarget "Emoji" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8052D9662578223100BA387F /* Debug */,
@@ -321,6 +330,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		80E8E95225782995003D2FDF /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		80E8E956257829EF003D2FDF /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		80E8E95325782995003D2FDF /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80E8E95225782995003D2FDF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		80E8E957257829EF003D2FDF /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80E8E956257829EF003D2FDF /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		80E8E959257829EF003D2FDF /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80E8E956257829EF003D2FDF /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		80E8E95B257829EF003D2FDF /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80E8E956257829EF003D2FDF /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8052D9492578223000BA387F /* Project object */;
 }

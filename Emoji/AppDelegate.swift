@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Emojy
+//  Emoji
 //
 //  Created by Luis Costa on 02/12/2020.
 //
