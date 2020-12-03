@@ -36,10 +36,14 @@ final class EmojiButtonView: UIView {
     // MARK: - Initializer
     
     init(actionForEmoji: @escaping () -> Void,
-         actionForEmpty: @escaping () -> Void) {
+         actionForEmpty: @escaping () -> Void,
+         state: State) {
         self.actionForEmoji = actionForEmoji
         self.actionForEmpty = actionForEmpty
+        self.state = state
         super.init(frame: .zero)
+        addSubViews()
+        setupConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -85,11 +89,9 @@ final class EmojiButtonView: UIView {
     @objc private func buttonTapped() {
         switch state {
         case .empty:
-            configure(with: .loading)
             actionForEmpty()
             
         case .emoji:
-            configure(with: .loading)
             actionForEmoji()
         
         default: return

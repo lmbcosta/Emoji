@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		80192A752578410100E76A45 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80192A742578410100E76A45 /* CommonButton.swift */; };
+		8077B743257863C800243A0C /* EmojisNavigatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8077B742257863C800243A0C /* EmojisNavigatorProtocol.swift */; };
+		8077B74B257864D700243A0C /* EmojisNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8077B74A257864D700243A0C /* EmojisNavigator.swift */; };
+		807DA65725787B7B0099C5AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807DA65625787B7B0099C5AD /* LaunchScreen.storyboard */; };
 		80A9BF9D25782E5E004B7854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E5A8BE25782ACE00223A32 /* AppDelegate.swift */; };
 		80A9BFA925783090004B7854 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9BFA825783090004B7854 /* MainViewController.swift */; };
 		80A9BFAC257830A6004B7854 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A9BFAB257830A6004B7854 /* MainViewModel.swift */; };
@@ -27,6 +30,9 @@
 /* Begin PBXFileReference section */
 		80192A742578410100E76A45 /* CommonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
 		8052D9512578223000BA387F /* Emoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8077B742257863C800243A0C /* EmojisNavigatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisNavigatorProtocol.swift; sourceTree = "<group>"; };
+		8077B74A257864D700243A0C /* EmojisNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojisNavigator.swift; sourceTree = "<group>"; };
+		807DA65625787B7B0099C5AD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A9BFA825783090004B7854 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		80A9BFAB257830A6004B7854 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		80A9BFAE257830BE004B7854 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -82,6 +88,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8077B749257864C300243A0C /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				8077B74A257864D700243A0C /* EmojisNavigator.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
 		80A9BFA725782FCC004B7854 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +110,7 @@
 		80A9BFB425783159004B7854 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8077B749257864C300243A0C /* Navigator */,
 				80A9BFC525783939004B7854 /* Extensions */,
 				80A9BFBE257833F7004B7854 /* Views */,
 				80A9BFBD257833E9004B7854 /* Protocols */,
@@ -115,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				80A9BFB525783177004B7854 /* BuilderProtocol.swift */,
+				8077B742257863C800243A0C /* EmojisNavigatorProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -143,6 +159,7 @@
 				80E5A8BB25782ACE00223A32 /* Assets.xcassets */,
 				80E5A8BE25782ACE00223A32 /* AppDelegate.swift */,
 				80E5A8BF25782ACE00223A32 /* Info.plist */,
+				807DA65625787B7B0099C5AD /* LaunchScreen.storyboard */,
 			);
 			path = Emoji;
 			sourceTree = "<group>";
@@ -216,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				807DA65725787B7B0099C5AD /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,8 +251,10 @@
 				80A9BFC3257837D9004B7854 /* EmojiButtonView.swift in Sources */,
 				80A9BFC02578341D004B7854 /* EmojiView.swift in Sources */,
 				80192A752578410100E76A45 /* CommonButton.swift in Sources */,
+				8077B743257863C800243A0C /* EmojisNavigatorProtocol.swift in Sources */,
 				80A9BFB625783177004B7854 /* BuilderProtocol.swift in Sources */,
 				80A9BFAC257830A6004B7854 /* MainViewModel.swift in Sources */,
+				8077B74B257864D700243A0C /* EmojisNavigator.swift in Sources */,
 				80A9BFB22578311F004B7854 /* MainBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -348,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -361,11 +381,11 @@
 		8052D9662578223100BA387F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 634C6P2UP3;
 				INFOPLIST_FILE = "$(SRCROOT)/Emoji/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,11 +400,11 @@
 		8052D9672578223100BA387F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 634C6P2UP3;
 				INFOPLIST_FILE = "$(SRCROOT)/Emoji/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

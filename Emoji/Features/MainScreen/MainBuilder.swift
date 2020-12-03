@@ -7,6 +7,8 @@
 
 final class MainBuilder: BuilderProtocol {
     func build() -> MainViewController {
-        .init()
+        let viewModel = MainViewModel()
+        let navigator = EmojisNavigator()
+        return MainViewController(viewModel: viewModel, navigator: navigator)
     }
 }
